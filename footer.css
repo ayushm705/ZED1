@@ -1,0 +1,52 @@
+
+
+.common-1{
+            border:0px;
+            font-family:apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+            color:aliceblue;
+            font-size:20px;
+            float:left;
+        }
+         .uber-home{  background: none;
+            position: relative;
+            left:510px;
+            top:20px;
+            
+        }
+        
+        .cities{
+           background: none;
+            position: relative;
+            left:510px;
+            top:20px;
+            
+        }
+        .driver{
+            background: none;
+            position: relative;
+            left:510px;
+            top:20px;
+            
+        }
+         .lastlink{
+            
+            position:relative;
+            top:55px;
+            left:250px;
+            font-size:13px;
+            float:left;
+            margin:6px;
+            color:aliceblue;
+            text-decoration: none;
+        }
+        #fb{
+            position: relative;
+           right:380px;
+            top:47px;
+        }
+        #ios-andy{
+            
+            position: relative;
+            left:970px;
+            top:20px;
+}

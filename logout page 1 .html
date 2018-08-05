@@ -1,0 +1,411 @@
+<html>
+
+    <head> 
+    
+        
+        <title>Dashboard/My Trips</title>
+    
+        <link rel="icon" href="z.jpg" type="image/jpg">
+    
+        <style>
+        
+            #navbar{
+                height: 100px;
+                margin: 0 auto;
+                box-shadow: 0px 2px 20px grey;
+            }
+            body{
+                margin: 0;
+                padding: 0;
+            }
+            @font-face
+            {
+                font-family:logo;
+                src:url(Pasajero.otf);
+
+            }
+            @font-face
+            {
+                font-family:occupied;
+                src:url(Occupied.otf);
+            }
+           @font-face
+            {
+                font-family:horizon;
+                src:url(horizon.ttf);
+            }
+
+            .t
+            {
+                color: blueviolet;
+                font-family: horizon;
+                font-size: 90px;
+
+            }
+            .e
+            {   font-family: logo;
+                color: darkslateblue;
+                font-size:82px; 
+            }
+            .d
+            {   font-family: logo;
+                color: darkgreen;
+                font-size:76px; 
+            }
+            #logo{
+                
+                
+                position:absolute;
+                left: 600px;
+                top:10px;
+            }
+            #dashboard{
+                margin-left: 1080px;
+                margin-top: 35px;
+                float: left;
+            }
+            #dashboard-span{
+                color: black;
+                padding-top: 38px;
+                cursor: pointer;
+            }
+            #form-format{
+                margin-left: 200px;
+                margin-top: 15px;
+                height: 540px;
+                width: 200px;
+                border-left: 1px solid #E6E6E6;
+                border-right: 1px solid #E6E6E6;
+                border-bottom: 1px solid #E6E6E6;
+                box-shadow:  0px -5px 5px #E6E6E6;
+                float: left;
+            }
+            #userlogin-image{
+                margin: 18px;
+            }
+            .form-content{
+                border-top: 1px solid #E6E6E6;
+                padding: 14px 0px 14px 16px;
+            }
+            
+            .form-content:hover{
+                background-color: #1FBAD6;
+                color: white;
+            }
+            
+            #magnifying-lens{
+                margin: 0;
+                padding: 0;
+                float: left; 
+                
+            }
+            #magnifying-lens-div{
+                border-top: 1px solid #E6E6E6;
+                
+            }
+            #lost1{
+                color: #1FBAD6;
+                margin-top: 17px;
+            }
+            
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            #container{
+                height: 540px;
+                width: 940px;
+                box-shadow: -5px 0px 5px #E6E6E6;
+                position: relative;
+                left: 402px;
+                top: 15px;
+                border-right: 1px solid #E6E6E6;
+            }
+            #box1{
+                height: 80px;
+                width: 940px;
+                font-size: 30px;
+                padding-top: 24px;
+                font-weight:lighter;
+                text-shadow: 2px 4px darkgrey;
+            }
+            #box2{
+                height: 36px;
+                width: 880px;
+                border-bottom: 1px solid #E6E6E6;
+                position: absolute;
+                
+                padding: 14px 0px 0px 60px;
+            }
+            #table-div1{
+                position: absolute;
+                left: 0px;
+                top: 180px;
+                width: 910px;
+                height: 20px;
+                padding: 15px 20px;
+            }
+            #table-div2{
+                position: absolute;
+                left: 0px;
+                top: 230px;
+                width: 910px;
+                height: 20px;
+                padding: 15px 20px;
+            }
+            #table-div3{
+                position: absolute;
+                left: 0px;
+                top: 280px;
+                width: 910px;
+                height: 20px;
+                padding: 15px 20px;
+            }
+            #table-div4{
+                position: absolute;
+                left: 0px;
+                top: 330px;
+                width: 910px;
+                height: 20px;
+                padding: 15px 20px;
+            }
+            #footer-div{
+                background-color: #09091A;
+                height: 160px;
+                width: 100%;
+                margin-top: 18px;
+                
+                
+            }
+            #twiter-img{
+                margin-left: 260px;
+                margin-top: 50px;
+            }
+            #footer-home{
+                color: white;
+                font-family: sans-serif;
+                font-size: 30px;
+                position: relative;
+                left: 660px;
+                bottom: 50px;
+            }
+            #aboutus{
+                color: white;
+                font-family: sans-serif;
+                position: relative;
+                left: 700px;
+                bottom: 30px;
+            }
+            #apple{
+                position: absolute;
+                left: 1000px;
+                bottom: -60px;
+                
+            }
+            #playstore{
+                position: absolute;
+                left: 1120px;
+                bottom: -60px;
+            }
+            #black{
+                background-color: black;
+                opacity: 0.6;
+                height: 800px;
+                width: 1360px;
+                position: absolute;
+                left: 0px;
+                top: 0px;
+            }
+            #logout-div{
+                background-color: white;
+                height: 100px;
+                width: 350px;
+                border-radius: 35px;
+                position: absolute;
+                top: 160px;
+                left: 550px;
+                padding: 20px 35px;
+            }
+            #btn1{
+                padding: 5px 25px;
+                border-radius: 10px;
+                background-color: deepskyblue;
+                
+            }
+            #btn2{
+                padding: 5px 25px;
+                border-radius: 10px;
+                background-color: deepskyblue;
+                
+            }
+            
+            
+            
+            
+        </style>
+    
+    </head>
+
+    <body>
+        
+        <div id="navbar">
+        
+            <div id="logo">
+        
+            <span class="t">Z</span>
+            <span class="e">E</span>
+            <span class="d">D</span>        
+
+            </div>
+            
+            
+        
+        </div>
+        
+        <div id="form-format">
+        
+            <img src="userlogin.PNG" id="userlogin-image">
+        
+            <div class="form-content" style="font-weight: bold" >My Trips</div>
+            
+            <a href="Landing%20page%202.html"><div class="form-content" > Profile</div></a>
+            
+            <a href="Landing%20page%203.html"><div class="form-content" >Payments</div></a>
+            
+            <a href="Landing%20page%204.html"><div class="form-content" >Free Rides</div></a>
+            
+            <a href="Landing%20page%205.html"><div class="form-content" >Drive with ZED</div></a>
+            
+            <div class="form-content" >Logout</div>
+            
+            <div  id="magnifying-lens-div">
+            
+            <img src="magnifying%20lens.PNG" id="magnifying-lens">
+                <div id="lost1">Lost Something ?</div>
+                
+                <p>Check out zed.com/lost</p>
+                
+            </div>
+        
+        </div>
+        
+        <div id="container">
+        
+            <div id="box1">
+            
+                MY TRIPS
+                
+            </div>
+        
+            <div id="box2">
+            
+            Pickup&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Driver&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;
+            Fare&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Car&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            City&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Payment Method
+            </div>
+        
+            <div id="table-div1">
+                21 feb 2017&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Ankit Bhatt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+                325&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;
+                Maruti Suzuki 800&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Rajnangaon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;
+                Cash
+
+            </div>
+            <div id="table-div2">
+                7 oct 2017&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Ayush Mishra&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+                285&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;
+                Maruti Suzuki 800&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Rajnangaon
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;
+                Coupon(FIRSTRIDE)+Cash
+
+            </div>
+            <div id="table-div3">
+                3 jan 2018&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Ayush Mishra&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+                245&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;
+                WagonR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                Rajnangaon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                Phonepay
+
+            </div>
+            <div id="table-div4">
+                18 march 2018&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Mr. X&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;
+                4025&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Mercedes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Mumbai&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;
+                PayTM
+
+            </div>
+        
+        </div>
+        
+        <div id="footer-div">
+        
+            <img src="twiter.PNG" id="twiter-img">
+            
+            <img src="facebook.PNG" id="fb-img">
+            
+            <div id="footer-home">ZED Home</div>
+            
+            <div id="aboutus">About Us</div>
+            
+            <img src="apple%20store.PNG" id="apple">
+            
+            <img src="play%20store.PNG" id="playstore">
+        
+        </div>
+        <div id="black">
+        
+        </div>
+        
+        <div id="logout-div">
+            Are you sure want to logout ?<br><br><br>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             &nbsp;&nbsp;&nbsp;&nbsp;       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="ZED.html" ><button type="button" id="btn1">Yes</button> </a>
+        
+        <a href="Landing%20page%201.html" ><button type="button" id="btn2">No</button> </a>
+        
+        </div>
+        
+        
+    </body>
+
+</html>

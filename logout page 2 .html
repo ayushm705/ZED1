@@ -1,0 +1,482 @@
+<html>
+
+    <head> 
+    
+        
+        <title>Dashboard/Profile</title>
+    
+        <link rel="icon" href="z.jpg" type="image/jpg">
+    
+        <style>
+        
+            #navbar{
+                height: 100px;
+                margin: 0 auto;
+                box-shadow: 0px 2px 20px grey;
+            }
+            body{
+                margin: 0;
+                padding: 0;
+            }
+            @font-face
+            {
+                font-family:logo;
+                src:url(Pasajero.otf);
+
+            }
+            @font-face
+            {
+                font-family:occupied;
+                src:url(Occupied.otf);
+            }
+           @font-face
+            {
+                font-family:horizon;
+                src:url(horizon.ttf);
+            }
+
+            .t
+            {
+                color: blueviolet;
+                font-family: horizon;
+                font-size: 90px;
+
+            }
+            .e
+            {   font-family: logo;
+                color: darkslateblue;
+                font-size:82px; 
+            }
+            .d
+            {   font-family: logo;
+                color: darkgreen;
+                font-size:76px; 
+            }
+            #logo{
+                
+                
+                position:absolute;
+                left: 600px;
+                top:10px;
+            }
+            #dashboard{
+                margin-left: 1080px;
+                margin-top: 35px;
+                float: left;
+            }
+            #dashboard-span{
+                color: black;
+                padding-top: 38px;
+                cursor: pointer;
+            }
+            #form-format{
+                margin-left: 200px;
+                margin-top: 15px;
+                height: 634px;
+                width: 200px;
+                border-left: 1px solid #E6E6E6;
+                border-bottom: 1px solid #E6E6E6;
+                box-shadow:  0px -5px 5px #E6E6E6;
+                float: left;
+            }
+            #userlogin-image{
+                margin: 18px;
+            }
+            .form-content{
+                border-top: 1px solid #E6E6E6;
+                padding: 14px 0px 14px 16px;
+            }
+            .form-content:hover{
+                background-color: #1FBAD6;
+                color: white;
+            }
+            
+            
+            #magnifying-lens{
+                margin: 0;
+                padding: 0;
+                float: left; 
+                
+            }
+            #magnifying-lens-div{
+                border-top: 1px solid #E6E6E6;
+                
+            }
+            #lost1{
+                color: #1FBAD6;
+                margin-top: 17px;
+            }
+            
+            a{
+                text-decoration: none;
+                color: black;
+            }
+             #container{
+                height: 635px;
+                width: 770px;
+                box-shadow: -5px 0px 5px #E6E6E6;
+                position: relative;
+                left: 402px;
+                top: 15px;
+                border-right: 1px solid #E6E6E6;
+                
+                
+            }
+            #box1{
+                height: 80px;
+                width: 770px;
+                font-size: 30px;
+                padding-top: 24px;
+                font-weight:lighter;
+                text-shadow: 2px 4px darkgrey;
+                border-bottom: 1px solid #E6E6E6;
+            }
+            #box2{
+                height: 36px;
+                width: 710px;
+                border-bottom: 1px solid #E6E6E6;
+                position: absolute;
+                font-weight: 700;
+                font-size: 20px;
+                padding: 14px 0px 0px 60px;
+            }
+            #box3{
+                height: 36px;
+                width: 710px;
+                border-bottom: 1px solid #E6E6E6;
+                position: absolute;
+                margin-top: 50px;
+                padding: 14px 0px 0px 60px;
+                font-size: 17px;
+            }
+            #btn1{
+                padding: 4px 5px;
+                font-size: 20px;
+            }
+            #country{
+                padding: 2px 6px;
+                font-size: 14px;
+            }
+            #box4{
+                height: 86px;
+                width: 710px;
+                border-bottom: 1px solid #E6E6E6;
+                position: absolute;
+                margin-top: 100px;
+                padding: 14px 0px 0px 60px;
+                font-size: 17px;
+                
+                
+            }
+            #profile{
+                margin-top: 8px;
+                height: 48px;
+            }
+            #number{
+                padding: 2px 6px;
+                font-size: 14px;
+                width: 170px;
+            }
+            #box5{
+                height: 86px;
+                width: 710px;
+                border-bottom: 1px solid #E6E6E6;
+                position: absolute;
+                margin-top: 200px;
+                padding: 14px 0px 0px 60px;
+                font-size: 17px;
+            }
+            #email{
+                padding: 2px 6px;
+                font-size: 14px;
+                width: 170px;
+            }
+            #btn2{
+                padding: 8px 35px;
+                border: none;
+                background-color: cornflowerblue;
+                font-size: 22px;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            #btn2:hover{
+                background-color: black;
+                color: white;
+            }
+            #box6{
+                height: 86px;
+                width: 710px;
+                border-bottom: 1px solid #E6E6E6;
+                position: absolute;
+                margin-top: 300px;
+                padding: 14px 30px 0px 30px;
+                font-size: 17px;
+           }
+            #box7{
+                margin-top: 15px;
+                padding-top: 20px;
+                width: 710px;
+                height: 40px;
+                background-color: #FEEFB3;
+                border-radius: 5px;
+            }
+            #box8{
+                height: 106px;
+                width: 710px;
+                position: absolute;
+                margin-top: 400px;
+                padding: 14px 0px 0px 60px;
+                font-size: 17px;
+            }        
+            #email-span{
+                font-size: 21px;
+                font-weight: bold;
+            }
+            #footer-div{
+                background-color: #09091A;
+                height: 160px;
+                width: 100%;
+                margin-top: 18px;
+                
+                
+            }
+            #twiter-img{
+                margin-left: 260px;
+                margin-top: 50px;
+            }
+            #footer-home{
+                color: white;
+                font-family: sans-serif;
+                font-size: 30px;
+                position: relative;
+                left: 660px;
+                bottom: 50px;
+            }
+            #aboutus{
+                color: white;
+                font-family: sans-serif;
+                position: relative;
+                left: 700px;
+                bottom: 30px;
+            }
+            #apple{
+                position: absolute;
+                left: 1000px;
+                bottom: -170px;
+                
+            }
+            #playstore{
+                position: absolute;
+                left: 1120px;
+                bottom: -170px;
+            }
+             #black{
+                background-color: black;
+                opacity: 0.6;
+                height: 800px;
+                width: 1360px;
+                position: absolute;
+                left: 0px;
+                top: 0px;
+            }
+            #logout-div{
+                background-color: white;
+                height: 100px;
+                width: 350px;
+                border-radius: 35px;
+                position: absolute;
+                top: 160px;
+                left: 550px;
+                padding: 20px 35px;
+            }
+            #btn1{
+                padding: 5px 25px;
+                border-radius: 10px;
+                background-color: deepskyblue;
+                
+            }
+            #btn2{
+                padding: 5px 25px;
+                border-radius: 10px;
+                background-color: deepskyblue;
+                
+            }
+            
+            
+            
+        </style>
+    
+    </head>
+
+    <body>
+        
+        <div id="navbar">
+        
+            <div id="logo">
+        
+            <span class="t">Z</span>
+            <span class="e">E</span>
+            <span class="d">D</span>        
+
+            </div>
+            
+            
+        
+        </div>
+        
+        <div id="form-format">
+        
+            <img src="userlogin.PNG" id="userlogin-image">
+        
+            <a href="Landing%20page%201.html"><div class="form-content"  >My Trips</div></a>
+            
+            <div class="form-content" style="font-weight: bold">Profile</div>
+            
+            <a href="Landing%20page%203.html"><div class="form-content" >Payments</div></a>
+            
+            <a href="Landing%20page%204.html"><div class="form-content" >Free Rides</div></a>
+            
+            <a href="Landing%20page%205.html"><div class="form-content" >Drive with ZED</div></a>
+            
+            <div class="form-content" >Logout</div>
+            
+            <div  id="magnifying-lens-div">
+            
+            <img src="magnifying%20lens.PNG" id="magnifying-lens">
+                <div id="lost1">Lost Something ?</div>
+                
+                <p>Check out zed.com/lost</p>
+                
+            </div>
+        
+        </div>
+        
+        <div id="container">
+        
+            <div id="box1">
+            
+            PROFILE
+            
+            </div>
+        
+            <div id="box2">
+            
+            General Information
+            
+            
+            </div>
+        
+            <div id="box3">
+            
+            <input type="text" placeholder="User's Name" id="btn1">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+            Location :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;
+                <select accesskey="" id="country">
+                
+                    <option>America</option>
+                    <option>China</option>
+                    <option>Japan</option>
+                    <option>Russia</option>
+                    <option>United Arab Emirates</option>
+                    <option>Australia</option>
+                    <option selected>India</option>          
+                    <option>Pakistan</option>
+                    <option>Afganistan</option>
+                    <option>Sri Lanka</option>
+                </select>
+            
+            </div>
+            
+            <div id="box4">
+            
+                Profile Photo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+                <img id="profile" src="userlogin.PNG">
+            
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Phone No&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;
+                <input type="number" id="number" >
+            
+            
+            </div>
+        
+            <div id="box5">
+                
+                E-mail :&nbsp;&nbsp;&nbsp;&nbsp;
+                
+                <input type="email" id="email" placeholder="Enter e-mail here" >
+                <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+                <input type="button" id="btn2" value="Save">
+                
+            </div>
+            
+            <div id="box6">
+            
+                <div id="box7">
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    
+                    
+                Please visit the ZED app on your phone if you are unable to edit a field on this page.
+                
+                </div>
+            
+            </div>
+        
+            <div id="box8">
+            
+            <span id="email-span">Email Lists</span><br/><br>
+            Subscribe to email lists in your region to get the latest news from Uber. You'll be the first to hear about our promotions, new city launches, and product updates — and we promise we won't email you more than a few times a month.
+            </div>
+         
+        </div>
+        
+        <div id="footer-div">
+        
+            <img src="twiter.PNG" id="twiter-img">
+            
+            <img src="facebook.PNG" id="fb-img">
+            
+            <div id="footer-home">ZED Home</div>
+            
+            <div id="aboutus">About Us</div>
+            
+            <img src="apple%20store.PNG" id="apple">
+            
+            <img src="play%20store.PNG" id="playstore">
+        
+        </div>
+        
+        <div id="black">
+        
+        </div>
+        
+        <div id="logout-div">
+            Are you sure want to logout ?<br><br><br>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             &nbsp;&nbsp;&nbsp;&nbsp;       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="ZED.html" ><button type="button" id="btn1">Yes</button> </a>
+        
+        <a href="Landing%20page%202.html" ><button type="button" id="btn2">No</button> </a>
+        
+        </div>
+        
+        
+    </body>
+
+</html>

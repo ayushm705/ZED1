@@ -1,0 +1,150 @@
+.footer-image
+        {
+            width: auto;
+            height: 306px;
+            background-image: url(footer2.JPG);
+            clear: both;
+            background-size: cover;
+        }
+        .main-footer
+        {   clear: both;
+            width: auto;
+            height: 550px;;
+            background-color: black;
+            background-size: cover;
+            padding: 50px 20px 0 160px;
+        }
+        .first
+        {
+            width: 300px;
+            height: 30px;
+            float: left;
+                
+        }
+        .foot-signup,.foot-rider
+        {
+            width: 300px;
+            height: 50px;
+            float: left;
+        }
+        .footer-first
+        {   
+            width: auto;
+            height: 50px;
+        }
+        .footer-btn
+        {
+            height: 30px;
+            background-color: white;
+            color: black;
+            font-family:'Nunito', sans-serif;
+            border: none;
+           font-weight: 700;
+        }
+        .footer-btn:hover
+        {
+            cursor: pointer;
+            background-color: darkgrey;
+            color: white;
+        }
+        .footer-btn2:hover
+        {
+            cursor: pointer;
+            background-color: white;
+            color: black;
+        }
+        .footer-btn2:hover a
+        {
+            cursor: pointer;
+            background-color: white;
+            color: black;
+        }
+        .footer-btn2
+        {
+            height: 30px;
+            background-color: black;
+            color: white;
+            font-family:'Nunito', sans-serif;
+            border: 2px solid white;
+            font-weight: 400;
+        }
+        .footer-btn2 a
+        {
+            color: white;
+        }
+        
+        hr 
+        {
+    float: left;
+    border: 0;
+    height: 0.7px;
+    width: 950px;
+    background-color: white;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    
+     }
+        .foot1,.foot2,.foot3
+        {
+            width: 200px;
+            color:   white;
+            float: left;
+            height: 230px;
+            margin-right: 100px;
+            
+        }
+        .foot2 p,.foot3 p
+        {
+            font-family: 'Nunito', sans-serif;
+            margin-bottom: 5px;
+            display: block;
+        }
+        .foot4,.foot5,.foot6
+        {
+            width: 200px;
+            color:   white;
+            float: left;
+            height: 180px;
+            margin-right: 100px;
+            margin-top: 0px;
+            font-weight: lighter;
+        }
+        .foot5 p,.foot6 p 
+        {
+            font-family: 'Nunito', sans-serif;
+            margin-bottom: 5px;
+            display: block;
+        }
+        .foot5 p:hover,.foot6 p:hover ,.foot2 p:hover,.foot3 p:hover
+        {
+            color: lightgrey;
+            cursor: pointer;
+        }
+        .foot-copy
+        {
+            width: 300px;
+            height: 15px;
+            font-family: 'Nunito', sans-serif;
+            color: white;
+            font-size: 12px;
+            float: left;
+            margin-right: 100px;
+        }
+        .foot-privacy
+        {
+            width: 300px;
+            height: 15px;
+            font-family: 'Nunito', sans-serif;
+            color: white;
+            font-size: 12px;
+            float: left;
+            margin-top: 13px;
+        }
+        .foot-privacy span
+        {
+            margin-right: 30px;
+        }
+        .foot-privacy span:hover
+        {
+            color: lightgrey;
+            cursor: pointer;
+        }

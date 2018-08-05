@@ -1,0 +1,265 @@
+<html>
+
+    <head>
+        
+        <link rel="icon" href="z.jpg" type="image/jpg">
+
+        <title>Signup to Ride</title>
+
+        <style>
+        
+            #logo{
+                
+                position:absolute;
+                left: 360px;
+                top:140px;
+                z-index:2;
+                
+                
+                
+            }
+            
+           @font-face
+            {
+                font-family:logo;
+                src:url(Pasajero.otf);
+
+            }
+            @font-face
+            {
+                font-family:occupied;
+                src:url(Occupied.otf);
+            }
+           @font-face
+            {
+                font-family:horizon;
+                src:url(horizon.ttf);
+            }
+
+            .t
+            {
+                color: blueviolet;
+                font-family: horizon;
+                font-size: 90px;
+
+            }
+            .e
+            {   font-family: logo;
+                color: darkslateblue;
+                font-size:82px; 
+            }
+            .d
+            {   font-family: logo;
+                color: darkgreen;
+                font-size:76px; 
+            }
+            
+            body{
+                margin: 0;
+                padding: 0;
+                
+            }
+
+            #header-image{
+                opacity: 0.65;
+                height: 820px;
+                width: 100%;
+                z-index:1;
+            }
+        
+            
+            
+                .signup-form
+                {
+                    width: 336px;
+                    height: 700px;
+                    background-color: #f7f8f9;
+                    float: right;
+                    position:absolute;
+                    left:800px;
+                    top:50px;
+                    padding: 32px;
+                    z-index: 2;
+                }
+                .user
+                {
+                    width: 80px;
+                    height:80px;
+                    background-image: url(user.png);
+                    background-size: 80px 80px;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                }
+                .sign
+                {
+                    font-family: 'Poiret One', cursive;
+                    margin-left: 100px;
+                    font-size: 32px;
+                    margin-top: 25px;
+                }
+                .form
+                {
+                    font-family: 'Cambay', sans-serif;
+                }
+                #ufname,#ulname
+                {
+                    width: 167px;
+                    height: 50px;
+                    padding: 10px;
+                    border: 1px solid lightgray;
+                    font-size: 20px;
+                    float: left;
+                    }
+                #email,#phone,#password,#city,#code
+                {
+                    width: 334px;
+                    height: 50px;
+                    padding: 10px;
+                    border: 1px solid lightgray;
+                    font-size: 20px;
+                }
+                #email,#city,#code
+                {
+                    margin-top: 20px;
+                }
+                .btn2
+                {
+                    width: 334px;
+                    height: 50px;
+                    padding: 10px; 
+                    font-size: 20px;
+                    border: none;
+                    font-family: occupied;
+                    background-color: green;
+                    color: white;
+                    font-size: 25px;
+                    font-weight: bold;
+                    margin-top: 25px;
+                }
+                .form-footer
+                {
+                    font-family: 'Cambay', sans-serif;
+                }
+                .form-footer span
+                {
+                    color: forestgreen;
+                }
+                .form-footer1
+                {
+                    font-family: 'Cambay', sans-serif;
+                    font-size: 13px;
+                }
+                .form-footer1 span
+                {
+                    color: forestgreen;
+                }
+               
+                .footer
+                {
+                    width: auto;
+                    clear: both;
+                    height: 300px;
+
+                    padding: 100px;
+                }
+
+            #login-link{
+                text-decoration: none;
+                color: forestgreen;
+            }
+
+
+
+        
+        </style>
+        
+        
+        <script>
+    function validate(formobj)
+        {
+        	var FirstName,LastName,Email,Phone,Password,City;
+        	FirstName=formobj.ufname.value;
+        	LastName=formobj.ulname.value;
+            Email=formobj.email.value;
+            Phone=formobj.phone.value;
+            Password=formobj.password.value;
+            City=formobj.city.value;
+        	
+        	if (FirstName.length==0||LastName.length==0)
+            {
+        		alert("Kindly enter Username first");
+        		formobj.ufname.focus();
+        		return false;
+        	}
+        	else if(Password.length<4||Password.length==0||Password.length>10)
+        	{
+        		alert("Enter a valid password of 5 to 10 character ");
+        		formobj.password.focus();
+        		return false;
+        	}
+        	
+        	else if(Phone.length<=0||Phone.length>10)
+        	{
+        		alert("Kindly Enter a valid Phone NO. ");
+                formobj.phone.focus();
+        		return false;
+        	}
+            else
+                {
+                    alert("Form Submitted Successfully");
+                    alert("Please continue to Login with your just created ID");
+                    return true;
+                }
+        }
+    </script>
+        
+    </head>
+
+    <body>
+        <a href="ZED.html">
+        <div id="logo">
+        
+        <span class="t">Z</span>
+        <span class="e">E</span>
+        <span class="d">D</span>
+        
+        </div>
+        </a>
+        <div id="header-image-div">
+        
+        <img src="action-asphalt-auto-210019.jpg" id="header-image">        
+        
+        </div>
+        
+        <div class="signup-form">
+        
+                    <div class="user"></div>
+                    <h4 class="sign">Sign up to Ride</h4>
+                    <div class="form">
+                    <form method="POST" action="" onsubmit=" return validate(this)">
+
+                    <input type="text"  id="ufname" placeholder="First Name" >
+
+                    <input type="text" id="ulname" placeholder="Last Name">
+
+                    <input type="email" id="email" placeholder="Email">
+                    <input type="tel" id="phone" placeholder="Phone">
+                    <input type="password" id="password" placeholder="Create Password">
+                    <input type="text" id="city" placeholder="City">
+                    <input type="text" id="code" placeholder="Invite Code (optional)">
+                    <input type="submit" class="btn2" value="SIGN UP TO RIDE "/>
+                        </form> 
+                    <p class="form-footer">Or <span><a href="login%20rider.html" id="login-link">Log In</a> </span> with your account. 
+                    </p>
+                    <p class="form-footer1">By clicking "Sign Up", you agree to ZED's <span>Terms and Conditions </span>and <span>Privacy Policy.</span> .</p>
+                </div>
+                
+        </div>
+                
+        
+        
+        
+        
+    </body>
+
+</html>

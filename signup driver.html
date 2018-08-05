@@ -1,0 +1,337 @@
+<html>
+<head><link rel="icon" type="image/jpg" href="z.jpg"/>
+    <title>Sign-up</title>
+    <script>
+    function validate(formobj)
+        {
+        	var FirstName,LastName,Email,Phone,Password,City;
+        	FirstName=formobj.ufname.value;
+        	LastName=formobj.ulname.value;
+            Email=formobj.email.value;
+            Phone=formobj.phone.value;
+            Password=formobj.password.value;
+            City=formobj.city.value;
+        	
+        	if (FirstName.length==0||LastName.length==0)
+            {
+        		alert("Kindly enter Username first");
+        		formobj.ufname.focus();
+        		return false;
+        	}
+        	else if(Password.length<4||Password.length==0||Password.length>10)
+        	{
+        		alert("Enter a valid password of 5 to 10 character ");
+        		formobj.password.focus();
+        		return false;
+        	}
+        	
+        	else if(Phone.length<=0||Phone.length>10)
+        	{
+        		alert("Kindly Enter a valid Phone NO. ");
+                formobj.phone.focus();
+        		return false;
+        	}
+            else
+                {
+                    alert("Form Submitted Successfully");
+                    return true;
+                }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cambay|Poiret+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <style>
+        @font-face
+        {
+            font-family:logo;
+            src:url(Pasajero.otf);
+            
+        }
+        @font-face
+        {
+            font-family:occupied;
+            src:url(Occupied.otf);
+        }
+       @font-face
+        {
+            font-family:horizon;
+            src:url(horizon.ttf);
+        }
+    body
+        {
+            background-image: url(gray-wallpaper-30.jpg);
+            background-size: 100% 795px;
+            background-repeat: no-repeat;
+            
+        }
+        .brand-name
+        {
+            font-family: logo;
+            margin: 50px;
+            letter-spacing: 10px;
+            font-size: 65px;
+        }
+       .t
+        {
+            color: blueviolet;
+            font-family: horizon;
+            font-size: 60px;
+            
+        }
+        .e
+        {   font-family: logo;
+            color: darkslateblue;
+        }
+        .d
+        {
+            font-family: logo;
+            color: darkgreen;
+        }
+         .signup-form
+        {
+            width: 336px;
+            height: 700px;
+            background-color: #f7f8f9;
+            float: right;
+            margin-top: -150px;
+            margin-right: 150px;
+            padding: 32px;
+            box-shadow: 5px 5px 5px #bbbcbf; 
+        }
+        
+        .sign
+        {
+            font-family: 'Poiret One', cursive;
+            margin-left: 100px;
+            font-size: 32px;
+            margin-top: 25px;
+        }
+        .form
+        {
+            font-family: 'Cambay', sans-serif;
+        }
+        #ufname,#ulname
+        {
+            width: 160px;
+            height: 40px;
+            padding: 10px;
+            border: none;
+            outline: none;
+            font-size: 20px; 
+            border-radius: 10px;
+            border: 1px solid white;
+        }
+        #email,#phone,#password,#city,#code
+        {
+            width: 334px;
+            height: 40px;
+            padding: 10px;
+            border:none;
+            outline: none;
+            font-size: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border: 1px solid white;
+        }
+        #email,#city,#code
+        {
+            margin-top: 20px;
+        }
+        #city
+        {
+            margin-top: 10px;
+        }
+         #email:focus,#phone:focus,#password:focus,#city:focus,#code:focus,#ufname:focus,#ulname:focus
+        {
+            border: 1px solid skyblue;
+            box-shadow: 2px 2px 5px #eaeaea;
+        }
+         #email:hover,#phone:hover,#password:hover,#city:hover,#code:hover,#ufname:hover,#ulname:hover
+        {
+            box-shadow: 2px 2px 5px #eaeaea;
+        }
+        .btn2
+        {
+            width: 334px;
+            height: 50px;
+            padding: 10px; 
+            font-size: 20px;
+            border: none;
+            font-family: occupied;
+            background-color: green;
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+            margin-top: 25px;
+            box-shadow: 3px 3px 5px grey;
+        }
+        .form-footer
+        {
+            font-family: 'Cambay', sans-serif;
+        }
+        .form-footer span
+        {
+            color: forestgreen;
+        }
+        .form-footer1
+        {
+            font-family: 'Cambay', sans-serif;
+            font-size: 13px;
+        }
+        .form-footer1 span
+        {
+            color: forestgreen;
+        }
+        .inform
+        {
+            width: 600px;
+            height: 300px;
+            margin-left: 50px;
+        }
+        .inform h1
+        {
+            font-family: 'Poiret One', cursive;
+            font-size: 45px;
+        }
+        .inform h2
+        {
+            font-family: 'Poiret One', cursive;
+            font-size: 25px;
+            opacity: 0.5;
+        }
+        .footer
+        {
+            width: auto;
+            clear: both;
+            height: 300px;
+          
+            padding: 100px;
+        }
+        .ex1
+        {   width: 190px;
+            height: 169px;
+            background-image: url(freedom.png);
+            float: left;
+            margin-right: 300px;
+        }
+        .ex2
+        {   width: 190px;
+            height: 190px;
+            background-image: url(time.png);
+            float: left;
+            margin-right: 300px;
+            margin-top: -10px;
+                
+        }
+        .ex3
+        {   width: 190px;
+            height: 155px;
+            background-image: url(money.png);
+            float: left;
+        }
+        .btn2:hover
+        {
+            opacity: 0.7;
+            cursor: pointer;
+        }
+        .excon
+        {
+            width: 250px;
+            height: 250px;
+            float: left;
+            margin-right: 240px;
+            font-family: 'Cambay', sans-serif; 
+            font-size: 13px;
+            
+        }
+        .excon1
+        {
+            width: 230px;
+            height: 250px;
+            float: left;
+            font-family: 'Cambay', sans-serif;
+            font-size: 13px;
+           
+        }
+        .excon h3,.excon1 h3
+        {
+            opacity: 0.5;
+        }
+        .sign-up
+        {
+            width: 360px;
+            height: 20px;
+            padding: 15px 0 15px 0;
+            background-color: black;
+            color: white;
+            border: none;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            margin-left: -5px;
+        }
+        .sign-up h2
+        {
+            font-family: occupied;
+            margin: 0;
+        }
+        .sign-up:hover
+        {
+            cursor: pointer;
+            box-shadow: 1.5px 1.5px 3px 3px grey;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <a href="ZED.html" style="text-decoration: none">  <h1 class="brand-name"><span class="t">Z</span><span class="e">E</span><span class="d">D</span></h1> </a>
+    <div class="signup-form">
+        <a href="login%20driver.html">
+        <div class="sign-up"><h2>ALREADY HAVE AN ACCOUNT ?</h2></div></a>
+        <div class="form">
+        <form method="POST" action="process.php" onsubmit=" return validate(this)">
+            
+	<input type="text"  id="ufname" placeholder="First Name" >
+	
+	<input type="text" id="ulname" placeholder="Last Name">
+            
+	<input type="email" id="email" placeholder="Email">
+    <input type="tel" id="phone" placeholder="Phone">
+    <input type="password" id="password" placeholder="Create Password">
+	<input type="text" id="city" placeholder="City">
+    <input type="text" id="code" placeholder="Invite Code (optional)">
+    <input type="submit" class="btn2" value="SIGN UP TO DRIVE "/>
+        </form> 
+            <p class="form-footer">Or <a href="signup-to-ride.html"><span>sign up </span></a> to ride. 
+            </p>
+            <p class="form-footer1">By proceeding, I agree that zed or its representatives may contact me by email, phone, or SMS (including by automatic telephone dialing system) at the email address or number I provide, including for marketing purposes. I have read and understand the relevant <br /><span>Driver Privacy Statement</span> .</p>
+        </div>
+        </div>
+    
+    <div class="inform">
+    <h1>ZED needs partners like you.</h1>
+<h2>Drive with ZED and earn great money as an independent contractor. Get paid weekly just for helping our community of riders get rides around town. Be your own boss and get paid in fares for driving on your own schedule.
+    </h2>
+    </div>
+    <div class="footer">
+        <div class="ex1"> </div>
+         <div class="ex2"></div>
+         <div class="ex3"></div>
+        <div class="excon">   
+        <h2>No office, no boss.</h2>
+<h3>Whether you’re supporting your family or saving for something big, Uber gives you the freedom to get behind the wheel when it makes sense for you. Choose when you drive, where you go, and who you pick up.</h3></div>
+       <div class="excon">
+       <h2> Drive when you want.</h2>
+<h3>Need something outside the 9 to 5? As an independent contractor with Uber, you’ve got freedom and flexibility to drive whenever you have time. Set your own schedule, so you can be there for all of life’s most important moments.</h3>
+        </div> 
+        <div class="excon1">
+        <h2>Make good money.</h2>
+<h3>Got a car? Turn it into a money machine. The city is buzzing and Uber makes it easy for you to cash in on the action. Plus, you've already got everything you need to get started</h3>
+        </div>
+        
+    </div>
+    </body>
+</html>

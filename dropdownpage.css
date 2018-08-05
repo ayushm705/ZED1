@@ -1,0 +1,37 @@
+ @font-face
+        {
+            font-family:occupied;
+            src:url(Occupied.otf);
+        }
+    .drop-ride
+        {   display: none;
+            width: auto;
+            height: 70px;
+            background-color: white;
+            padding: 30px 10px 30px 100px;
+            color: black;
+            box-shadow: 1px 3px 5px grey;
+            
+        }
+        .r1,.r2,.r3,.r4,.r5,.r6,.r7
+        {
+            display: block;
+            font-family: occupied;
+            font-size: 24px;
+            font-weight: 600;
+            margin-right: 50px;
+            margin-bottom: 5px
+            
+        }
+        .drop1,.drop2,.drop3,.drop4
+        {
+           width: 250px;
+           height: 50px;
+            float: left;
+            margin-right: 70px;
+        }
+        .r1:hover,.r2:hover,.r3:hover,.r4:hover,.r5:hover,.r6:hover,.r7:hover
+        {
+            color: forestgreen;
+            cursor: pointer;
+        }

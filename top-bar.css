@@ -1,0 +1,195 @@
+.nav
+        {
+            width: 100%;
+            height: 60px;
+            background-color: white;
+            display: block;
+            position: fixed;
+            z-index: 100;
+           
+        }
+        
+        .com-name
+        {   float: left;
+            margin-left: 100px;
+            position: absolute;
+            margin-top: 10px;
+            width: 77.813px;;
+            height: 37.600px;
+            margin-right: 20px;
+        
+            
+        }
+        .com-name:hover
+        {
+            cursor: pointer;
+        }
+        .brand-name
+        {
+            font-family: logo;
+            margin: 0px;
+            letter-spacing: 4px;
+        }
+       .t
+        {
+            color: blueviolet;
+            font-family: horizon;
+            font-size: 36px;
+            
+        }
+        .e
+        {   font-family: logo;
+            color: darkslateblue;
+        }
+        .d
+        {font-family: logo;
+            color: darkgreen;
+        }
+        .nav-role1
+        {   width: 70px;
+            height: 25px;
+            font-family: occupied;
+            font-weight: normal;
+            display: inline-block;
+            margin-left: 170px;
+            padding-top: 16px;
+            font-size: 24px;
+            border-top:4px solid white;
+            text-align: center;
+            color:black;
+            
+        }
+        .nav-role2
+        {   width: 70px;
+            height: 25px;
+            font-family: occupied;
+            font-weight: normal;
+            display: inline-block;
+            margin-left: 30px;
+            padding-top: 16px;
+            font-size: 24px;
+            color:black;
+            border-top:4px solid white;
+            text-align: center;
+           
+        }
+       .nav-role1:hover,.nav-role2:hover
+        {
+            border-top: 4px solid black;
+            cursor: pointer;
+            color: mediumspringgreen;
+        }
+        
+        .nav-role3
+        {
+            width: 110px;
+            height: 25px;
+            font-family: occupied;
+            font-weight: normal;
+            display: inline-block;
+            margin-left: 0px;
+            padding-top: 16px;
+            font-size: 24px;
+            border-top:4px solid white;
+            text-align: center; 
+            float: right;
+            font-weight: bold;
+            color:black;
+        }
+        .nav-role4
+        {
+            width: 90px;
+            height: 25px;
+            font-family: occupied;
+            font-weight: normal;
+            display: inline-block;
+            margin-left: 5px;
+            padding-top: 16px;
+            font-size: 24px;
+            border-top:4px solid white;
+            text-align: center;
+            float: right;
+            color:black;
+            font-weight: bold;
+        }
+        .nav-role3:hover,.nav-role4:hover
+        {
+            border-top: 4px solid black;
+            cursor: pointer;
+            color: mediumspringgreen;
+        }
+        .nav-role5
+        {
+             width: 10px;
+            height: 25px;
+            font-family: occupied;
+            font-weight: normal;
+            display: inline-block;
+            margin-left: 5px;
+            padding-top: 16px;
+            font-size: 24px;
+            border-top:4px solid white;
+            text-align: center;
+            float: right;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+        .nav-role5:hover
+        {
+            cursor: pointer;
+        }
+        .btn1
+        {
+            font-family: occupied;
+            background-color: green;
+            color: white;
+            font-size: 18px;
+            padding: 8px 14px 8px 14px;
+            border: none;
+            box-shadow: 3px 3px 5px grey;
+        }
+        .nav-role6
+        {
+             width: 190px;
+            height: 25px;
+            font-family: occupied;
+            font-weight: normal;
+            display: inline-block;
+            margin-left: 5px;
+            padding-top: 0px;
+            font-size: 24px;
+            text-align: center;
+            float: right;
+            font-weight: bold;
+            margin-right: 20px;
+            margin-top: 10px;
+        }
+        .nave-role6:hover
+        {
+            cursor: pointer;
+        }
+        .btn1:hover,.btn2:hover
+        {
+            cursor: pointer;
+            opacity: 0.7;
+        }
+        .nav-role7
+        {
+           width: 30px;
+            height: 25px;
+            font-family: occupied;
+            font-weight: normal;
+            display: inline-block;
+            margin-left: 0px;
+            padding-top: 0px;
+            font-size: 24px;
+            margin-top: 15px;
+            text-align: center;
+            float: right;
+            font-weight: bold;
+            margin-right: 100px;   
+        }
+        .nav-role7:hover
+        {
+            cursor: pointer;
+        }

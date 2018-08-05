@@ -1,0 +1,365 @@
+<html>
+
+    <head> 
+    
+        
+        <title>Dashboard/Payments</title>
+    
+        <link rel="icon" href="z.jpg" type="image/jpg">
+    
+        <style>
+        
+            #navbar{
+                height: 100px;
+                margin: 0 auto;
+                box-shadow: 0px 2px 20px grey;
+            }
+            body{
+                margin: 0;
+                padding: 0;
+            }
+            @font-face
+            {
+                font-family:logo;
+                src:url(Pasajero.otf);
+
+            }
+            @font-face
+            {
+                font-family:occupied;
+                src:url(Occupied.otf);
+            }
+           @font-face
+            {
+                font-family:horizon;
+                src:url(horizon.ttf);
+            }
+
+            .t
+            {
+                color: blueviolet;
+                font-family: horizon;
+                font-size: 90px;
+
+            }
+            .e
+            {   font-family: logo;
+                color: darkslateblue;
+                font-size:82px; 
+            }
+            .d
+            {   font-family: logo;
+                color: darkgreen;
+                font-size:76px; 
+            }
+            #logo{
+                
+                
+                position:absolute;
+                left: 420px;
+                top:10px;
+            }
+            #dashboard{
+                margin-left: 1080px;
+                margin-top: 35px;
+                float: left;
+            }
+            #dashboard-span{
+                color: black;
+                padding-top: 38px;
+                cursor: pointer;
+            }
+            #form-format{
+                margin-left: 200px;
+                margin-top: 15px;
+                height: 540px;
+                width: 200px;
+                border-left: 1px solid #E6E6E6;
+                border-bottom: 1px solid #E6E6E6;
+                box-shadow:  5px -5px 5px #E6E6E6;
+                float: left;
+            }
+            #userlogin-image{
+                margin: 18px;
+            }
+            .form-content{
+                border-top: 1px solid #E6E6E6;
+                padding: 14px 0px 14px 16px;
+            }
+            
+            .form-content:hover{
+                background-color: #1FBAD6;
+                color: white;
+            }
+            #magnifying-lens{
+                margin: 0;
+                padding: 0;
+                float: left; 
+                
+            }
+            #magnifying-lens-div{
+                border-top: 1px solid #E6E6E6;
+                
+            }
+            #lost1{
+                color: #1FBAD6;
+                margin-top: 17px;
+            }
+            
+            a{
+                text-decoration: none;
+                color: black;
+            }
+             #container{
+                height: 541px;
+                width: 770px;
+                box-shadow: -5px 0px 5px #E6E6E6;
+                position: relative;
+                left: 402px;
+                top: 15px;
+                border-right: 1px solid #E6E6E6;
+                
+                
+            }
+            #box1{
+                height: 80px;
+                width: 770px;
+                font-size: 30px;
+                padding-top: 24px;
+                font-weight:lighter;
+                text-shadow: 2px 4px darkgrey;
+                border-bottom: 1px solid #E6E6E6;
+            }
+            #box2{
+                height: 28px;
+                width: 710px;
+                border-bottom: 1px solid #E6E6E6;
+                position: absolute;
+                font-weight: 700;
+                font-size: 20px;
+                padding: 14px 0px 8px 60px;
+            }
+            #box3{
+                height: 50px;
+                width: 765px;
+                border-bottom: 1px solid #E6E6E6;
+                position: absolute;
+                margin-top: 50px;
+                padding: 0px 0px 0px 5px;
+                font-size: 17px;
+            }
+            #plus{
+                margin-left: 400px;
+                color: deepskyblue;
+                cursor: pointer;
+            }#plus:hover{color: black;}
+            .btn1{
+                padding: 15px 28.7px;
+                border: none;
+                font-size: 18px;
+                margin:0;
+                background-color: orange;
+                cursor: pointer;
+            }.btn1:hover{background-color: deepskyblue;}
+            #box4{
+                height: 36px;
+                width: 710px;
+                border-bottom: 1px solid #E6E6E6;
+                position: absolute;
+                margin-top: 100px;
+                padding: 14px 0px 0px 60px;
+                font-size: 17px;
+                text-align: center; 
+            }
+            #box5{
+                height: 176px;
+                width: 710px;
+                position: absolute;
+                margin-top: 250px;
+                padding: 14px 0px 0px 60px;
+                font-size: 17px;
+                
+            }
+            #gratuity{
+                font-weight: bold;
+                font-size: 21px;
+            }
+            #btn2{
+                margin-left: 120px;
+                padding: 6px 16px;
+                border: none;
+                border-radius: 4px;
+            }
+            .option{
+                margin-left: 40px;
+                padding: 5px 12px;
+                font-size: 16px;
+                border-radius: 6px;
+            }
+            #footer-div{
+                background-color: #09091A;
+                height: 160px;
+                width: 100%;
+                position: absolute;
+                margin-top: 10px;
+                margin-left: 0px;
+                
+                
+            }
+            #twiter-img{
+                margin-left: 260px;
+                margin-top: 50px;
+            }
+            #footer-home{
+                color: white;
+                font-family: sans-serif;
+                font-size: 30px;
+                position: relative;
+                left: 660px;
+                bottom: 50px;
+            }
+            #aboutus{
+                color: white;
+                font-family: sans-serif;
+                position: relative;
+                left: 700px;
+                bottom: 30px;
+            }
+            #apple{
+                position: absolute;
+                left: 1000px;
+                bottom: 60px;
+                
+            }
+            #playstore{
+                position: absolute;
+                left: 1120px;
+                bottom: 60px;
+            }
+            
+            
+            
+        </style>
+    
+    </head>
+
+    <body>
+        
+        <div id="navbar">
+        <a href="ZED.html">
+            <div id="logo">
+        
+            <span class="t">Z</span>
+            <span class="e">E</span>
+            <span class="d">D</span>        
+
+            </div>
+            </a>
+            
+        
+        </div>
+        
+        <div id="form-format">
+        
+            <img src="userlogin.PNG" id="userlogin-image">
+        
+            <a href="Landing%20page%201.html"><div class="form-content"  >My Trips</div></a>
+            
+            <a href="Landing%20page%202.html"><div class="form-content" >Book a Cab</div></a>
+            
+            <div class="form-content" style="font-weight: bold">Payments</div>
+            
+            <a href="Landing%20page%204.html"><div class="form-content" >Free Rides</div></a>
+            
+            <a href="Landing%20page%205.html"><div class="form-content" >Drive with ZED</div></a>
+            
+            <a href="logout%20page%203%20.html"><div class="form-content" >Logout</div></a>
+            
+            <div  id="magnifying-lens-div">
+            
+            <img src="magnifying%20lens.PNG" id="magnifying-lens">
+                <div id="lost1">Lost Something ?</div>
+                
+                <p>Check out zed.com/lost</p>
+                
+            </div>
+        
+        </div>
+        
+        <div id="container">
+        
+            <div id="box1">
+            
+            Payments
+            
+            </div>
+        
+            <div id="box2">
+            
+            Payment Methods
+            
+            <span id="plus">+</span>
+            
+            </div>
+        
+            <div id="box3">
+            
+            <button type="button" class="btn1">Net Banking</button>
+            
+            <button type="button" class="btn1">Debit card/Credit card</button>
+                
+            <button type="button" class="btn1">Paypal</button>
+                
+            <button type="button" class="btn1">Phonepay</button>
+                
+            <button type="button" class="btn1">Paytm</button>
+            
+            </div>
+        
+            <div id="box4">
+            
+            No Payment Methods
+            
+            </div>
+        
+            <div id="box5">
+            
+           <span id="gratuity"> Gratuity for TAXI</span><br><br>
+            Your preferred gratuity will be applied to any future TAXI trips that you request through Uber. This will apply to TAXI fares only (not Black, SUV, or uberX) and be paid to your driver. Gratuity only applies in certain countries.
+            
+                <p>TAXI Gratuity 
+                    <select class="option">
+                    <option>0%</option>
+                    <option>10%</option>
+                    <option>15%</option>
+                    <option>20%</option>
+                    <option>25%</option>
+                    <option>30%</option>
+                    </select>
+                
+                <button type="button" id="btn2">Save</button>
+                
+                </p>
+
+            </div>
+        </div>
+        <div id="footer-div">
+        
+            <img src="twiter.PNG" id="twiter-img">
+            
+            <img src="facebook.PNG" id="fb-img">
+            
+            <a href="uber.html"><div id="footer-home">ZED Home</div></a>
+            
+            <a href="about%20us%20ZED.html"><div id="aboutus">About Us</div></a>
+            
+            <img src="apple%20store.PNG" id="apple">
+            
+            <img src="play%20store.PNG" id="playstore">
+        
+        </div>
+        
+        
+    </body>
+
+</html>

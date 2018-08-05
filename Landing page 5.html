@@ -1,0 +1,195 @@
+<html>
+
+    <head> 
+    
+        
+        <title>Dashboard/Drive with ZED</title>
+    
+        <link rel="icon" href="z.jpg" type="image/jpg">
+    
+        <style>
+        
+            #navbar{
+                height: 100px;
+                margin: 0 auto;
+                box-shadow: 0px 2px 20px grey;
+            }
+            body{
+                margin: 0;
+                padding: 0;
+            }
+            @font-face
+            {
+                font-family:logo;
+                src:url(Pasajero.otf);
+
+            }
+            @font-face
+            {
+                font-family:occupied;
+                src:url(Occupied.otf);
+            }
+           @font-face
+            {
+                font-family:horizon;
+                src:url(horizon.ttf);
+            }
+
+            .t
+            {
+                color: blueviolet;
+                font-family: horizon;
+                font-size: 90px;
+
+            }
+            .e
+            {   font-family: logo;
+                color: darkslateblue;
+                font-size:82px; 
+            }
+            .d
+            {   font-family: logo;
+                color: darkgreen;
+                font-size:76px; 
+            }
+            #logo{
+                position:absolute;
+                left: 40px;
+                top:10px;
+            }
+            #drive{
+                font-size: 30px;
+                font-weight: bold;
+            }
+            #discription{
+                height: 350px;
+                width: 100%;
+                background-color: #11939A;
+                margin-top: 10px;
+            }
+            .disc{
+                height:300px;
+                margin: 25px 20px 25px 20px;
+                color: white;
+                width: 330px;
+                float: left;
+                
+            }
+            #arrang{
+                margin: 0px 0px 0px 100px;
+            }
+            .font{
+                font-size: 28px;
+            }
+            #box1{
+                height: 240px;
+                width: 100%;
+                background-color: #F8F8F9;
+            }
+            #city{
+                
+                padding: 10px 0px 10px 20px;
+                font-size: 25px;
+            }
+            #invite{
+                padding: 10px 0px 10px 20px;
+                font-size: 25px;
+            }
+            .btn1{
+                 padding: 10px 20px;
+                font-size: 25px;
+                color: white;
+                background-color: #09091A;
+                border: none;
+                margin: 110px 0px 0px 60px;
+            }
+            .btn1:hover{
+                background-color: deepskyblue;
+                color: black;
+            }
+            
+            
+            
+            
+            
+        </style>
+    
+    </head>
+
+    <body>
+        
+        <div id="navbar">
+        
+            <div id="logo">
+            <span id="drive">Drive With</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <a href="ZED.html" style="text-decoration: none">
+            <span class="t">Z</span>
+            <span class="e">E</span>
+            <span class="d">D</span>        
+                </a>
+            </div>
+            
+        </div>
+        
+        <div id="discription">
+        
+            <div id="arrang">
+
+                <div class="disc a">
+                    <img src="makemoney.PNG">
+                    <br><br><br>
+                    <span class="font">Make great money</span><br><br>
+                    You can drive and earn as much as you want. And, the more you drive, the more you’ll make. Plus, you’ll get paid weekly and your fares get automatically deposited.
+                    
+                    
+                </div>
+                <div class="disc b">
+                    <img src="setschedule.PNG">
+                    <br><br><br>
+                    <span class="font">Set your own schedule</span><br><br>
+                    Only drive when it works for you. There’s no office and no boss. That means you’ll always start and stop on your time—because with Uber, you’re in charge.
+
+
+                    
+                    
+                </div>
+                <div class="disc c">
+                    <img src="easysineup.PNG">
+                    <br><br><br>
+                    <span class="font">Signing up is easy</span><br><br>
+                    Sign up today and you’ll be on the road in no time. Plus, signing up takes less than 4 minutes. Don’t wait to start making great money with your car.
+                    
+                </div>
+        
+            </div>
+        
+        
+        </div>
+        
+        <div id="box1">
+            
+            <div style="float: left;margin: 60px;">   
+            <br>
+            What city do you want to drive in?
+            <br><br>
+            <input type="text" placeholder="City" id="city">
+            </div>
+            
+            <div style="float: left;margin: 60px;">
+            <br>
+            Do you have any Promo-code?
+            <br><br>
+            <input type="text" placeholder="Invite Code(Optional)" id="invite">
+            </div>
+        
+            <input type="button" class="btn1" value="Submit">
+        
+        
+        </div>
+        
+        
+        
+    </body>
+
+</html>
